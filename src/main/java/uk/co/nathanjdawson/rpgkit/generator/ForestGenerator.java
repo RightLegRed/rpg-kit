@@ -17,32 +17,15 @@ public class ForestGenerator {
     int boundY = 0;
     ArrayList<Tile> tiles = new ArrayList<Tile>();
     Noise noise;
-    float maxNoise = 0;
-    float minNoise = 0;
+    double maxNoise = 0;
+    double minNoise = 0;
 
     public ForestGenerator(int boundX, int boundY) {
         this.boundX = boundX;
         this.boundY = boundY;
-        noise = new Noise(new Random(), 50, boundX, boundY);
+        noise = new Noise(new Random(), 1, boundX, boundY);
         noise.initialise();
-        syncNoiseBounds();
     }
-
-    public void syncNoiseBounds(){
-        for(int x=0;x<noise.grid_.length;x++){
-            for(int y=0;y<noise.grid_[x].length;y++){
-                int depth = Math.round(noise.grid_[x][y]);
-                if(depth > maxNoise){
-                    maxNoise = depth;
-                }
-                if(depth < minNoise){
-                    minNoise = depth;
-                }
-            }
-        }
-    }
-
-
 
     public ArrayList<Tile> generate(){
         generateGrass();
@@ -89,8 +72,8 @@ public class ForestGenerator {
         // Group together bodies of trees to create forests.
         for(int x=0;x<noise.grid_.length;x++){
             for(int y=0;y<noise.grid_[x].length;y++){
-                int depth = Math.round(noise.grid_[x][y]);
-                if(depth > 30){
+                double depth = noise.grid_[x][y];
+                if(depth > 0.75){
                     TreeTile treeTile = new TreeTile(new Point(x, y));
                     treeTile.setBackground(getTileByLocation(new Point(x,y)));
                     tiles.remove(getTileByLocation(new Point(x,y)));
@@ -103,8 +86,8 @@ public class ForestGenerator {
     public void generateWaterBodies(){
         for(int x=0;x<noise.grid_.length;x++){
             for(int y=0;y<noise.grid_[x].length;y++){
-                int depth = Math.round(noise.grid_[x][y]);
-                if(depth < -30){
+                double depth = noise.grid_[x][y];
+                if(depth < -0.50){
                     tiles.remove(getTileByLocation(new Point(x,y)));
                     tiles.add(new WaterTile(new Point(x, y)));
                 }

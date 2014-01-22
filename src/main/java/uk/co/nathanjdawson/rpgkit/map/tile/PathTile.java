@@ -16,6 +16,10 @@ public class PathTile extends Tile {
         super(location);
     }
 
+    public PathTile(int x, int y) {
+        super(x, y);
+    }
+
     @Override
     public void draw(Graphics graphics) {
         SpriteSheet spriteSheet = SpriteSheetManager.getSpriteSheet("tileset.png");

@@ -19,6 +19,10 @@ public abstract class Tile {
         this.location = location;
     }
 
+    public Tile(int x, int y){
+        this.location = new Point(x, y);
+    }
+
     public int getX(){
         return location.getX();
     }

@@ -1,0 +1,32 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="RPGKir">
+    <output-path>$PROJECT_DIR$/out/artifacts/RPGKir</output-path>
+    <root id="archive" name="RPGKir.jar">
+      <element id="module-output" name="RPGKit" />
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="directory" name="lib">
+        <element id="file-copy" path="$PROJECT_DIR$/lib/lwjgl_test.jar" />
+        <element id="file-copy" path="$PROJECT_DIR$/lib/asm-debug-all.jar" />
+        <element id="file-copy" path="$PROJECT_DIR$/lib/lwjgl_util.jar" />
+        <element id="file-copy" path="$PROJECT_DIR$/lib/lwjgl.jar" />
+        <element id="file-copy" path="$PROJECT_DIR$/lib/jogg-0.0.7.jar" />
+        <element id="file-copy" path="$PROJECT_DIR$/lib/ibxm.jar" />
+        <element id="file-copy" path="$PROJECT_DIR$/lib/lzma.jar" />
+        <element id="file-copy" path="$PROJECT_DIR$/lib/natives-windows.jar" />
+        <element id="file-copy" path="$PROJECT_DIR$/lib/jnlp.jar" />
+        <element id="file-copy" path="$PROJECT_DIR$/lib/AppleJavaExtensions.jar" />
+        <element id="file-copy" path="$PROJECT_DIR$/lib/slick-examples.jar" />
+        <element id="file-copy" path="$PROJECT_DIR$/lib/lwjgl-debug.jar" />
+        <element id="file-copy" path="$PROJECT_DIR$/lib/jinput.jar" />
+        <element id="file-copy" path="$PROJECT_DIR$/lib/jorbis-0.0.15.jar" />
+        <element id="file-copy" path="$PROJECT_DIR$/lib/natives-mac.jar" />
+        <element id="file-copy" path="$PROJECT_DIR$/lib/lwjgl_util_applet.jar" />
+        <element id="file-copy" path="$PROJECT_DIR$/lib/natives-linux.jar" />
+        <element id="file-copy" path="$PROJECT_DIR$/lib/slick.jar" />
+        <element id="file-copy" path="$PROJECT_DIR$/lib/tinylinepp.jar" />
+      </element>
+    </root>
+  </artifact>
+</component>

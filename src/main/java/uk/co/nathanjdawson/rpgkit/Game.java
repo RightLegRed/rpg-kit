@@ -5,6 +5,7 @@ import org.newdawn.slick.*;
 import uk.co.nathanjdawson.rpgkit.entity.Entity;
 import uk.co.nathanjdawson.rpgkit.entity.Player;
 import uk.co.nathanjdawson.rpgkit.generator.ForestGenerator;
+import uk.co.nathanjdawson.rpgkit.generator.MenuScreenGenerator;
 import uk.co.nathanjdawson.rpgkit.map.tile.*;
 
 import java.io.File;
@@ -26,10 +27,15 @@ public class Game extends BasicGame {
 
     Player player = new Player();
 
+    public Game(){
+        super("Game");
+    }
+
     public Game(String title) {
         super(title);
-        ForestGenerator forestGenerator = new ForestGenerator(screenX - 1, screenY - 1);
-        tiles = forestGenerator.generate();
+        //ForestGenerator forestGenerator = new ForestGenerator(screenX - 1, screenY - 1);
+        MenuScreenGenerator screenGenerator = new MenuScreenGenerator(screenX - 1, screenY - 1);
+        tiles = screenGenerator.generate();
         player.setLocation(new Point(0,0));
     }
 
@@ -106,6 +112,7 @@ public class Game extends BasicGame {
     public static void main(String[] args){
         System.setProperty("java.library.path", new File("lib/").getAbsolutePath());
         try{
+
             AppGameContainer appgc;
             appgc = new AppGameContainer(new Game("Simple Slick Game"));
             appgc.setDisplayMode(screenX * GAME_TILE_SIZE, screenY * GAME_TILE_SIZE, false);

@@ -17,7 +17,9 @@ public class MultiLayerTile extends Tile {
 
     @Override
     public void draw(Graphics graphics) {
-        background.draw(graphics);
+        if(background != null){
+            background.draw(graphics);
+        }
     }
 
     @Override
