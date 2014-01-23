@@ -74,21 +74,17 @@
       <file leaf-file-name="Letter.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/nathanjdawson/rpgkit/map/tile/Letter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="17" selection-start="390" selection-end="390" vertical-scroll-proportion="0.0" vertical-offset="655" max-vertical-offset="1020">
-              <folding>
-                <element signature="e#121#148#0" expanded="true" />
-              </folding>
+            <state line="35" column="24" selection-start="955" selection-end="955" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="1037">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MenuScreenGenerator.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="MenuScreenGenerator.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/nathanjdawson/rpgkit/generator/MenuScreenGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="72" column="62" selection-start="2390" selection-end="2390" vertical-scroll-proportion="0.4410959" vertical-offset="910" max-vertical-offset="1870">
-              <folding>
-                <element signature="e#2668#2674#0" expanded="true" />
-              </folding>
+            <state line="107" column="0" selection-start="3445" selection-end="3725" vertical-scroll-proportion="0.0" vertical-offset="1428" max-vertical-offset="1887">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -96,7 +92,46 @@
       <file leaf-file-name="Game.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/nathanjdawson/rpgkit/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="8" selection-start="1231" selection-end="1231" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="2159">
+            <state line="45" column="51" selection-start="1613" selection-end="1613" vertical-scroll-proportion="0.0" vertical-offset="183" max-vertical-offset="2312">
+              <folding>
+                <element signature="e#1080#1089#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tileset.png" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/spritesheets/tileset.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Weather.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/nathanjdawson/rpgkit/weather/Weather.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="35" selection-start="235" selection-end="235" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Rain.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/nathanjdawson/rpgkit/weather/Rain.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="33" column="88" selection-start="822" selection-end="822" vertical-scroll-proportion="0.6098655" vertical-offset="289" max-vertical-offset="1173">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#314#320#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GUIGenerator.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/nathanjdawson/rpgkit/generator/GUIGenerator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="37" column="26" selection-start="990" selection-end="990" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="714">
               <folding />
             </state>
           </provider>
@@ -105,10 +140,8 @@
       <file leaf-file-name="LetterTile.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/nathanjdawson/rpgkit/map/tile/LetterTile.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="9" selection-start="1709" selection-end="1709" vertical-scroll-proportion="0.0" vertical-offset="723" max-vertical-offset="1309">
-              <folding>
-                <element signature="e#447#462#0" expanded="true" />
-              </folding>
+            <state line="20" column="0" selection-start="531" selection-end="531" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1513">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -148,11 +181,21 @@
         <option value="$PROJECT_DIR$/src/main/java/uk/co/nathanjdawson/rpgkit/map/tile/Tile.java" />
         <option value="$PROJECT_DIR$/src/main/java/uk/co/nathanjdawson/rpgkit/map/tile/PathTile.java" />
         <option value="$PROJECT_DIR$/src/main/java/uk/co/nathanjdawson/rpgkit/map/tile/MultiLayerTile.java" />
+        <option value="$PROJECT_DIR$/src/main/java/uk/co/nathanjdawson/rpgkit/generator/MenuScreenGenerator.java" />
         <option value="$PROJECT_DIR$/src/main/java/uk/co/nathanjdawson/rpgkit/map/tile/Letter.java" />
         <option value="$PROJECT_DIR$/src/main/java/uk/co/nathanjdawson/rpgkit/map/tile/LetterTile.java" />
+        <option value="$PROJECT_DIR$/src/main/java/uk/co/nathanjdawson/rpgkit/generator/GUIGenerator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/uk/co/nathanjdawson/rpgkit/weather/Weather.java" />
         <option value="$PROJECT_DIR$/src/main/java/uk/co/nathanjdawson/rpgkit/Game.java" />
-        <option value="$PROJECT_DIR$/src/main/java/uk/co/nathanjdawson/rpgkit/generator/MenuScreenGenerator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/uk/co/nathanjdawson/rpgkit/weather/Rain.java" />
       </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
     </option>
   </component>
   <component name="MavenProjectNavigator">
@@ -190,8 +233,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="width" value="1456" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -227,6 +270,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -242,7 +286,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="RPGKit" />
+              <option name="myItemId" value="rpg-kit" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -252,21 +296,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="RPGKit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RPGKit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RPGKit" />
+              <option name="myItemId" value="rpg-kit" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -284,7 +314,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="RPGKit" />
+              <option name="myItemId" value="rpg-kit" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -310,7 +340,67 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="rpg-kit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rpgkit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="weather" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
               <option name="myItemId" value="RPGKit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rpg-kit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rpgkit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tile" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RPGKit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rpg-kit" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -340,7 +430,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="RPGKit" />
+              <option name="myItemId" value="rpg-kit" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -354,7 +444,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="RPGKit" />
+              <option name="myItemId" value="rpg-kit" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -368,7 +458,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -385,7 +474,7 @@
     <property name="restartRequiresConfirmation" value="true" />
     <property name="FullScreen" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="options.lastSelected" value="reference.settings.project.maven.repository.indices" />
@@ -639,7 +728,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -649,7 +738,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291536" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32857144" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32987013" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -658,15 +747,15 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329429" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38714734" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24930556" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.387013" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.6595238" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -690,29 +779,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/nathanjdawson/rpgkit/map/tile/MultiLayerTile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="33" selection-start="604" selection-end="604" vertical-scroll-proportion="0.0" vertical-offset="476" max-vertical-offset="714">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/nathanjdawson/rpgkit/map/tile/PathTile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="47" selection-start="612" selection-end="612" vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="527">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/nathanjdawson/rpgkit/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="0" selection-start="1345" selection-end="1625" vertical-scroll-proportion="0.0" vertical-offset="765" max-vertical-offset="2227">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/nathanjdawson/rpgkit/entity/Player.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="51" selection-start="515" selection-end="515" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="442">
@@ -761,9 +827,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/nathanjdawson/rpgkit/SpriteSheetManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="57" selection-start="624" selection-end="624" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="731">
-          <folding />
-        </state>
+        <state line="20" column="57" selection-start="624" selection-end="624" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="731" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/nathanjdawson/rpgkit/map/tile/WaterTile.java">
@@ -798,7 +862,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="86" column="13" selection-start="2714" selection-end="2714" vertical-scroll-proportion="0.0" vertical-offset="1462" max-vertical-offset="1989">
           <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="e#1080#1089#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -844,9 +908,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/nathanjdawson/rpgkit/SpriteSheetManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="197" selection-end="234" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="731">
-          <folding />
-        </state>
+        <state line="10" column="0" selection-start="197" selection-end="234" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="731" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/spritesheets/tileset.png">
@@ -858,7 +920,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="22" selection-start="566" selection-end="566" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1105">
           <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="e#1080#1089#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -867,7 +929,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="4" selection-start="237" selection-end="237" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="850">
           <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="e#1080#1089#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -876,7 +938,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="4" selection-start="237" selection-end="237" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="850">
           <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="e#1080#1089#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -885,7 +947,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="24" column="0" selection-start="524" selection-end="524" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="850">
           <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="e#1080#1089#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -897,9 +959,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/tiles.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="490">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="490" />
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/lib/slick.jar!/org/newdawn/slick/Graphics.class">
@@ -950,9 +1010,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/nathanjdawson/rpgkit/SpriteSheetManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="57" selection-start="624" selection-end="624" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="646">
-          <folding />
-        </state>
+        <state line="20" column="57" selection-start="624" selection-end="624" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="646" />
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/lib/slick.jar!/org/newdawn/slick/Game.class">
@@ -974,9 +1032,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="0" selection-start="1502" selection-end="1502" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="935">
-          <folding />
-        </state>
+        <state line="44" column="0" selection-start="1502" selection-end="1502" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="935" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/nathanjdawson/rpgkit/map/tile/FireTile.java">
@@ -1021,46 +1077,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/spritesheets/tileset.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/spritesheets/font.bmp">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/nathanjdawson/rpgkit/map/tile/Letter.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/nathanjdawson/rpgkit/map/tile/LetterTile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="17" selection-start="390" selection-end="390" vertical-scroll-proportion="0.0" vertical-offset="655" max-vertical-offset="1020">
-          <folding>
-            <element signature="e#121#148#0" expanded="true" />
-          </folding>
+        <state line="20" column="0" selection-start="531" selection-end="531" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1513">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/nathanjdawson/rpgkit/map/tile/LetterTile.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/nathanjdawson/rpgkit/generator/GUIGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="9" selection-start="1709" selection-end="1709" vertical-scroll-proportion="0.0" vertical-offset="723" max-vertical-offset="1309">
-          <folding>
-            <element signature="e#447#462#0" expanded="true" />
-          </folding>
+        <state line="37" column="26" selection-start="990" selection-end="990" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="714">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/nathanjdawson/rpgkit/map/tile/Letter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="24" selection-start="955" selection-end="955" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="1037">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/spritesheets/tileset.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/nathanjdawson/rpgkit/generator/MenuScreenGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="107" column="0" selection-start="3445" selection-end="3725" vertical-scroll-proportion="0.0" vertical-offset="1428" max-vertical-offset="1887">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/nathanjdawson/rpgkit/weather/Weather.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="35" selection-start="235" selection-end="235" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/nathanjdawson/rpgkit/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="8" selection-start="1231" selection-end="1231" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="2159">
-          <folding />
+        <state line="45" column="51" selection-start="1613" selection-end="1613" vertical-scroll-proportion="0.0" vertical-offset="183" max-vertical-offset="2312">
+          <folding>
+            <element signature="e#1080#1089#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/nathanjdawson/rpgkit/generator/MenuScreenGenerator.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/nathanjdawson/rpgkit/weather/Rain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="62" selection-start="2390" selection-end="2390" vertical-scroll-proportion="0.4410959" vertical-offset="910" max-vertical-offset="1870">
+        <state line="33" column="88" selection-start="822" selection-end="822" vertical-scroll-proportion="0.6098655" vertical-offset="289" max-vertical-offset="1173">
           <folding>
-            <element signature="e#2668#2674#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#314#320#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1072,8 +1148,8 @@
         <settings>
           <artifact-editor>
             <show-content>
-              <type id="library" />
               <type id="artifact" />
+              <type id="library" />
             </show-content>
           </artifact-editor>
           <last-edited>RPGKir</last-edited>
@@ -1112,7 +1188,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>1.7</last-edited>
+          <last-edited>1.6</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1129,6 +1205,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

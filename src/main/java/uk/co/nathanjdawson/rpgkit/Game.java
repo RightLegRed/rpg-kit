@@ -5,8 +5,11 @@ import org.newdawn.slick.*;
 import uk.co.nathanjdawson.rpgkit.entity.Entity;
 import uk.co.nathanjdawson.rpgkit.entity.Player;
 import uk.co.nathanjdawson.rpgkit.generator.ForestGenerator;
+import uk.co.nathanjdawson.rpgkit.generator.GUIGenerator;
 import uk.co.nathanjdawson.rpgkit.generator.MenuScreenGenerator;
 import uk.co.nathanjdawson.rpgkit.map.tile.*;
+import uk.co.nathanjdawson.rpgkit.weather.Rain;
+import uk.co.nathanjdawson.rpgkit.weather.Weather;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -24,8 +27,10 @@ public class Game extends BasicGame {
     public static int screenY = 36;
     ArrayList<Tile> tiles = new ArrayList<Tile>();
     ArrayList<Entity> entities = new ArrayList<Entity>();
-
+    GUIGenerator guiGenerator;
     Player player = new Player();
+
+    ArrayList<Weather> weathers = new ArrayList<Weather>();
 
     public Game(){
         super("Game");
@@ -34,17 +39,17 @@ public class Game extends BasicGame {
     public Game(String title) {
         super(title);
         //ForestGenerator forestGenerator = new ForestGenerator(screenX - 1, screenY - 1);
-        MenuScreenGenerator screenGenerator = new MenuScreenGenerator(screenX - 11, screenY - 1);
+        MenuScreenGenerator screenGenerator = new MenuScreenGenerator(screenX - 16, screenY - 1);
         tiles = screenGenerator.generate();
+        guiGenerator = new GUIGenerator(tiles, screenX - 15, 0, screenX - 1, screenY );
         player.setLocation(new Point(0,0));
+        weathers.add(new Rain(screenX - 15, screenY));
     }
 
     public Tile getRandomTile(){
         ArrayList<Tile> t = new ArrayList<Tile>();
         t.add(new GrassTile(new Point(0, 0)));
         t.add(new TreeTile(new Point(0, 0)));
-        //t.add(new PathTile(new Point(0, 0)));
-        //t.add(new FireTile(new Point(0, 0)));
         t.add(new WaterTile(new Point(0, 0)));
         Integer randomInt = randInt(0, t.size() - 1);
         return t.get(randomInt);
@@ -64,7 +69,10 @@ public class Game extends BasicGame {
 
     @Override
     public void update(GameContainer gameContainer, int i) throws SlickException {
-
+        tiles = guiGenerator.generate();
+        for(Weather w : weathers){
+            w.update(i);
+        }
     }
 
     @Override
@@ -106,7 +114,11 @@ public class Game extends BasicGame {
         for(Entity e : entities){
             e.draw(graphics);
         }
+
         player.draw(graphics);
+        for(Weather w : weathers){
+            w.draw(graphics);
+        }
     }
 
     public static void main(String[] args){

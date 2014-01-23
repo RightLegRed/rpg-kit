@@ -70,7 +70,7 @@ public class MenuScreenGenerator {
     }
 
     public void generateText(){
-        for(Tile t : stringToGrid("Im going to bed⤶Goodnight! ", new Point(4,5))){
+        for(Tile t : stringToGrid("This is a test⤶Test! ", new Point(4,5))){
             tiles.remove(getTileByLocation(t.getLocation()));
             tiles.add(t);
         }
@@ -89,6 +89,7 @@ public class MenuScreenGenerator {
                 continue;
             }
             LetterTile letterTile = new LetterTile(new Point(startPoint.getX() + x, startPoint.getY() + y), strCharacter);
+            letterTile.setBackground(new PathTile(letterTile.getLocation()));
             tileList.add(letterTile);
             x++;
         }

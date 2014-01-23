@@ -1,5 +1,6 @@
 package uk.co.nathanjdawson.rpgkit.map.tile;
 
+import org.lwjgl.util.Color;
 import org.lwjgl.util.Point;
 import org.newdawn.slick.Graphics;
 import org.newdawn.slick.Image;
@@ -16,11 +17,20 @@ public class LetterTile extends MultiLayerTile {
 
     HashMap<String, Point> letterMap = new HashMap<String, Point>();
     Letter letter;
+    Color color;
 
     public LetterTile(Point location, String letter) {
         super(location);
 
         this.letter = getLetter(letter);
+
+    }
+
+    public LetterTile(Point location, String letter, Color color) {
+        super(location);
+
+        this.letter = getLetter(letter);
+        this.color = color;
 
     }
 
@@ -34,6 +44,9 @@ public class LetterTile extends MultiLayerTile {
     }
 
     public Letter getLetter(String letter){
+        if(letter.equals("|")){
+            letter = "PIPE";
+        }
         if(isNumeric(letter)){
             switch(Integer.parseInt(letter)){
                 case 1:

@@ -33,16 +33,17 @@ public enum Letter {
     X(      new Point(8,5)),
     Y(      new Point(9,5)),
     Z(      new Point(10,5)),
-    SPACE(  new Point(0, 0)),
-    ONE(    new Point(1, 3)),
-    TWO(    new Point(2, 3)),
-    THREE(  new Point(3, 3)),
-    FOUR(   new Point(4, 3)),
-    FIVE(   new Point(5, 3)),
-    SIX(    new Point(6, 3)),
-    SEVEN(  new Point(7, 3)),
-    EIGHT(  new Point(8, 3)),
-    NINE(   new Point(9, 3));
+    SPACE(  new Point(0,0)),
+    ONE(    new Point(1,3)),
+    TWO(    new Point(2,3)),
+    THREE(  new Point(3,3)),
+    FOUR(   new Point(4,3)),
+    FIVE(   new Point(5,3)),
+    SIX(    new Point(6,3)),
+    SEVEN(  new Point(7,3)),
+    EIGHT(  new Point(8,3)),
+    NINE(   new Point(9,3)),
+    PIPE(   new Point(3,11));
 
     private Letter(final Point point) {
         this.point = point;
