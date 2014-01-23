@@ -1,5 +1,6 @@
 package uk.co.nathanjdawson.rpgkit.weather;
 
+import com.sun.jndi.url.dns.dnsURLContext;
 import org.newdawn.slick.Graphics;
 import org.newdawn.slick.geom.Line;
 
@@ -30,10 +31,16 @@ public class Rain extends Weather {
 
     @Override
     public void update(int delta) {
-        for(Line line : rainDrops){
-            int size = distance(line.getX1(), line.getY1(), line.getX2(), line.getY2());
-            line.set(line.getX1(), n, x2, y2);
-    }
+        for(Line line : (ArrayList<Line>)rainDrops.clone()){
+            //int size = distance(line.getX1(), line.getY1(), line.getX2(), line.getY2());
+            int distance = randInt(0, 30);
+            line.set(line.getX1(), line.getY1() + distance, line.getX2(), line.getY2() + distance);
+            System.out.println(line.getY1());
+            if(line.getY1() > 500){
+                rainDrops.remove(line);
+            }
+        }
+
         int chance = randInt(0, 10);
         if(chance == 0){
             rainDrops.add(createLine());
@@ -48,10 +55,10 @@ public class Rain extends Weather {
     }
 
     public Line createLine(){
-        int spawnX = randInt(0, boundX);
-        int spawnY = randInt(0, 5);
-        int spawnSizeX = spawnX + randInt(-5, 5);
-        int spawnSizeY = spawnY + randInt(-5, 5);
+        int spawnX = randInt(0, boundX * 16);
+        int spawnY = randInt(0, boundY * 16);
+        int spawnSizeX = spawnX + randInt(-2, 2);
+        int spawnSizeY = spawnY + randInt(-20, 20);
         return new Line(spawnX, spawnY, spawnSizeX, spawnSizeY);
     }
     // http://stackoverflow.com/questions/363681/generating-random-numbers-in-a-range-with-java || Greg Case

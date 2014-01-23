@@ -119,10 +119,10 @@
       <file leaf-file-name="Rain.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/nathanjdawson/rpgkit/weather/Rain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="88" selection-start="822" selection-end="822" vertical-scroll-proportion="0.6098655" vertical-offset="289" max-vertical-offset="1173">
+            <state line="58" column="44" selection-start="1616" selection-end="1616" vertical-scroll-proportion="0.54260087" vertical-offset="744" max-vertical-offset="1292">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#314#320#0" expanded="true" />
+                <element signature="e#357#363#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -962,11 +962,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="490" />
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/slick.jar!/org/newdawn/slick/Graphics.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="196" column="0" selection-start="9065" selection-end="9065" vertical-scroll-proportion="0.8213457" vertical-offset="2961" max-vertical-offset="3417" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/nathanjdawson/rpgkit/map/tile/WaterTile.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="50" selection-start="616" selection-end="616" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
@@ -1131,12 +1126,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/slick.jar!/org/newdawn/slick/Graphics.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="83" column="16" selection-start="2868" selection-end="2868" vertical-scroll-proportion="-0.30490956" vertical-offset="1512" max-vertical-offset="3417">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/nathanjdawson/rpgkit/weather/Rain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="88" selection-start="822" selection-end="822" vertical-scroll-proportion="0.6098655" vertical-offset="289" max-vertical-offset="1173">
+        <state line="58" column="44" selection-start="1616" selection-end="1616" vertical-scroll-proportion="0.54260087" vertical-offset="744" max-vertical-offset="1292">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#314#320#0" expanded="true" />
+            <element signature="e#357#363#0" expanded="true" />
           </folding>
         </state>
       </provider>
