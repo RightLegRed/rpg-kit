@@ -20,7 +20,7 @@ import java.util.logging.Logger;
 public class Game extends BasicGame {
 
     public static int GAME_TILE_SIZE = 16;
-    public static int screenX = 50;
+    public static int screenX = 60;
     public static int screenY = 36;
     ArrayList<Tile> tiles = new ArrayList<Tile>();
     ArrayList<Entity> entities = new ArrayList<Entity>();
@@ -34,7 +34,7 @@ public class Game extends BasicGame {
     public Game(String title) {
         super(title);
         //ForestGenerator forestGenerator = new ForestGenerator(screenX - 1, screenY - 1);
-        MenuScreenGenerator screenGenerator = new MenuScreenGenerator(screenX - 1, screenY - 1);
+        MenuScreenGenerator screenGenerator = new MenuScreenGenerator(screenX - 11, screenY - 1);
         tiles = screenGenerator.generate();
         player.setLocation(new Point(0,0));
     }

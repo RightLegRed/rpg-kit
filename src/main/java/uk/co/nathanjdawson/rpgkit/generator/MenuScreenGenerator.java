@@ -33,20 +33,6 @@ public class MenuScreenGenerator {
     public ArrayList<Tile> generate(){
         generateGrass();
         generateText();
-        tiles.add(new LetterTile(new Point(0,0), "N"));
-        tiles.add(new LetterTile(new Point(1,0), "A"));
-        tiles.add(new LetterTile(new Point(2,0), "T"));
-        tiles.add(new LetterTile(new Point(3,0), "H"));
-        tiles.add(new LetterTile(new Point(4,0), "A"));
-        tiles.add(new LetterTile(new Point(5,0), "N"));
-        tiles.add(new LetterTile(new Point(6,0), " "));
-        tiles.add(new LetterTile(new Point(7,0), "D"));
-        tiles.add(new LetterTile(new Point(8,0), "A"));
-        tiles.add(new LetterTile(new Point(9,0), "W"));
-        tiles.add(new LetterTile(new Point(10,0), "S"));
-        tiles.add(new LetterTile(new Point(11,0), "O"));
-        tiles.add(new LetterTile(new Point(12,0), "N"));
-        tiles.add(new LetterTile(new Point(13,0), "1"));
         return tiles;
     }
 
@@ -84,33 +70,27 @@ public class MenuScreenGenerator {
     }
 
     public void generateText(){
-
+        for(Tile t : stringToGrid("Im going to bed⤶Goodnight! ", new Point(4,5))){
+            tiles.remove(getTileByLocation(t.getLocation()));
+            tiles.add(t);
+        }
     }
 
     public ArrayList<Tile> stringToGrid(String str, Point startPoint){
-        HashMap<Character, Tile[]> stringMap = new HashMap<Character, Tile[]>();
-        stringMap.put('N', new Tile[]{new PathTile(0,0), new PathTile(0,1),
-        new PathTile(0, 2), new PathTile(0, 3), new PathTile(0,4),
-        new PathTile(1, 1), new PathTile(2, 2), new PathTile(3, 3),
-        new PathTile(4, 4), new PathTile(4, 3), new PathTile(4, 2), new PathTile(4, 1),
-        new PathTile(4,0)});
-        stringMap.put('J', new Tile[]{new PathTile(0,0), new PathTile(1,0), new PathTile(2,0),
-        new PathTile(3,0), new PathTile(4,0), new PathTile(3,1), new PathTile(3, 2),
-        new PathTile(3,3), new PathTile(2,4), new PathTile(1,4), new PathTile(0, 3)});
-        stringMap.put('D', new Tile[]{new PathTile(0,0), new PathTile(0,1), new PathTile(0,2),
-        new PathTile(0,3), new PathTile(0,4), new PathTile(1,0), new PathTile(2,0), new PathTile(3,0),
-        new PathTile(4,1), new PathTile(4,2), new PathTile(4,3), new PathTile(4, 1), new PathTile(4,2),
-        new PathTile(4,3), new PathTile(1,4), new PathTile(2,4), new PathTile(3, 4)});
+        str = str.toUpperCase();
         ArrayList<Tile> tileList = new ArrayList<Tile>();
-
+        int y = 0;
+        int x = 0;
         for(int i = 0; i<str.length();i++){
-            Character strCharacter = str.charAt(i);
-            if(stringMap.containsKey(strCharacter)){
-                for(Tile tile : stringMap.get(strCharacter)){
-                    tile.setLocation(new Point((startPoint.getX() + tile.getX()) + (i * 6), startPoint.getY() + tile.getY()));
-                    tileList.add(tile);
-                }
+            String strCharacter = String.valueOf(str.charAt(i));
+            if(strCharacter.equals("⤶")){
+                y++;
+                x = 0;
+                continue;
             }
+            LetterTile letterTile = new LetterTile(new Point(startPoint.getX() + x, startPoint.getY() + y), strCharacter);
+            tileList.add(letterTile);
+            x++;
         }
         return tileList;
     }

@@ -56,15 +56,12 @@ public class LetterTile extends MultiLayerTile {
                     return Letter.NINE;
             }
         }
-        if(letter.equals(" ")){
-            return Letter.SPACE;
-        }
         for(Letter l : Letter.values()){
             if(l.toString().equals(letter)){
                 return l;
             }
         }
-        return null;
+        return Letter.SPACE;
     }
 
     public boolean isNumeric(String str){
