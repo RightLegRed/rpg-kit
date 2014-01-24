@@ -2,10 +2,7 @@ package uk.co.nathanjdawson.rpgkit.generator;
 
 import org.lwjgl.util.Point;
 import uk.co.nathanjdawson.rpgkit.Game;
-import uk.co.nathanjdawson.rpgkit.map.tile.GrassTile;
-import uk.co.nathanjdawson.rpgkit.map.tile.LetterTile;
-import uk.co.nathanjdawson.rpgkit.map.tile.PathTile;
-import uk.co.nathanjdawson.rpgkit.map.tile.Tile;
+import uk.co.nathanjdawson.rpgkit.map.tile.*;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -70,31 +67,12 @@ public class MenuScreenGenerator {
     }
 
     public void generateText(){
-        for(Tile t : stringToGrid("This is a test⤶Test! ", new Point(4,5))){
+        for(Tile t : Letter.stringToGrid("This is a test⤶Test! ", new Point(4, 5))){
             tiles.remove(getTileByLocation(t.getLocation()));
             tiles.add(t);
         }
     }
 
-    public ArrayList<Tile> stringToGrid(String str, Point startPoint){
-        str = str.toUpperCase();
-        ArrayList<Tile> tileList = new ArrayList<Tile>();
-        int y = 0;
-        int x = 0;
-        for(int i = 0; i<str.length();i++){
-            String strCharacter = String.valueOf(str.charAt(i));
-            if(strCharacter.equals("⤶")){
-                y++;
-                x = 0;
-                continue;
-            }
-            LetterTile letterTile = new LetterTile(new Point(startPoint.getX() + x, startPoint.getY() + y), strCharacter);
-            letterTile.setBackground(new PathTile(letterTile.getLocation()));
-            tileList.add(letterTile);
-            x++;
-        }
-        return tileList;
-    }
 
     public Tile getTileByLocation(Point point){
         for(Tile t : tiles){

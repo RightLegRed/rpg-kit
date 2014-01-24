@@ -31,6 +31,17 @@ public class GUIGenerator {
         return tiles;
     }
 
+    public ArrayList<Tile> generateText(){
+
+        return tiles;
+    }
+
+    public ArrayList<Tile> generateMenu(){
+
+        return tiles;
+    }
+
+
     public void generateBorders(){
         for(int y = 0; y<boundY; y++){
             Tile tile = new LetterTile(new Point(startX, y), "|");

@@ -2,6 +2,8 @@ package uk.co.nathanjdawson.rpgkit.map.tile;
 
 import org.lwjgl.util.Point;
 
+import java.util.ArrayList;
+
 /**
  * Created by Archelaus on 22/01/14.
  */
@@ -53,5 +55,25 @@ public enum Letter {
 
     public Point getPoint() {
         return point;
+    }
+
+    public static ArrayList<Tile> stringToGrid(String str, Point startPoint){
+        str = str.toUpperCase();
+        ArrayList<Tile> tileList = new ArrayList<Tile>();
+        int y = 0;
+        int x = 0;
+        for(int i = 0; i<str.length();i++){
+            String strCharacter = String.valueOf(str.charAt(i));
+            if(strCharacter.equals("⤶")){
+                y++;
+                x = 0;
+                continue;
+            }
+            LetterTile letterTile = new LetterTile(new Point(startPoint.getX() + x, startPoint.getY() + y), strCharacter);
+            letterTile.setBackground(new PathTile(letterTile.getLocation()));
+            tileList.add(letterTile);
+            x++;
+        }
+        return tileList;
     }
 }
