@@ -96,7 +96,7 @@ public class DungeonGenerator {
     }
 
     public static void main(String[] args){
-        DungeonGenerator d = new DungeonGenerator(50, 50);
+        DungeonGenerator d = new DungeonGenerator(100, 100);
         ArrayList<Tile> tiles = d.generate();
         LinkedHashMap<Integer, String> lines = new LinkedHashMap<Integer, String>();
         for(int y = 0; y <= d.boundY; y++){

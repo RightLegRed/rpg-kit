@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="rpgkit" default="all">
+  
+  
+  <property file="rpgkit.properties"/>
+
+  <property name="skip.tests" value="true"/>
+
+  
+  <!-- Compiler options -->
+  
+  <property name="compiler.debug" value="on"/>
+  <property name="compiler.generate.no.warnings" value="off"/>
+  <property name="compiler.args" value=""/>
+  <property name="compiler.max.memory" value="128m"/>
+  <patternset id="ignored.files">
+    <exclude name="**/CVS/**"/>
+    <exclude name="**/SCCS/**"/>
+    <exclude name="**/RCS/**"/>
+    <exclude name="**/rcs/**"/>
+    <exclude name="**/.DS_Store/**"/>
+    <exclude name="**/.svn/**"/>
+    <exclude name="**/.pyc/**"/>
+    <exclude name="**/.pyo/**"/>
+    <exclude name="**/*.pyc/**"/>
+    <exclude name="**/*.pyo/**"/>
+    <exclude name="**/.git/**"/>
+    <exclude name="**/*.hprof/**"/>
+    <exclude name="**/_svn/**"/>
+    <exclude name="**/.hg/**"/>
+    <exclude name="**/*.lib/**"/>
+    <exclude name="**/*~/**"/>
+    <exclude name="**/__pycache__/**"/>
+    <exclude name="**/.bundle/**"/>
+    <exclude name="**/*.rbc/**"/>
+  </patternset>
+  <patternset id="library.patterns">
+    <include name="*.zip"/>
+    <include name="*.apk"/>
+    <include name="*.war"/>
+    <include name="*.egg"/>
+    <include name="*.ear"/>
+    <include name="*.ane"/>
+    <include name="*.swc"/>
+    <include name="*.jar"/>
+  </patternset>
+  <patternset id="compiler.resources">
+    <exclude name="**/?*.java"/>
+    <exclude name="**/?*.form"/>
+    <exclude name="**/?*.class"/>
+    <exclude name="**/?*.groovy"/>
+    <exclude name="**/?*.scala"/>
+    <exclude name="**/?*.flex"/>
+    <exclude name="**/?*.kt"/>
+    <exclude name="**/?*.clj"/>
+  </patternset>
+  
+  
+  <!-- Project Libraries -->
+  
+  <path id="library.lib.classpath">
+    <fileset dir="${basedir}/lib">
+      <patternset refid="library.patterns"/>
+    </fileset>
+  </path>
+  
+  <path id="library.org.lwjgl.lwjgl:lwjgl:2.9.1.classpath">
+    <pathelement location="${path.variable.maven_repository}/net/java/jinput/jinput-platform/2.0.5/jinput-platform-2.0.5-natives-linux.jar"/>
+    <pathelement location="${path.variable.maven_repository}/net/java/jinput/jinput-platform/2.0.5/jinput-platform-2.0.5-natives-osx.jar"/>
+    <pathelement location="${path.variable.maven_repository}/net/java/jinput/jinput-platform/2.0.5/jinput-platform-2.0.5-natives-windows.jar"/>
+    <pathelement location="${path.variable.maven_repository}/net/java/jinput/jinput/2.0.5/jinput-2.0.5.jar"/>
+    <pathelement location="${path.variable.maven_repository}/net/java/jutils/jutils/1.0.0/jutils-1.0.0.jar"/>
+    <pathelement location="${path.variable.maven_repository}/org/lwjgl/lwjgl/lwjgl-platform/2.9.1/lwjgl-platform-2.9.1-natives-linux.jar"/>
+    <pathelement location="${path.variable.maven_repository}/org/lwjgl/lwjgl/lwjgl-platform/2.9.1/lwjgl-platform-2.9.1-natives-osx.jar"/>
+    <pathelement location="${path.variable.maven_repository}/org/lwjgl/lwjgl/lwjgl-platform/2.9.1/lwjgl-platform-2.9.1-natives-windows.jar"/>
+    <pathelement location="${path.variable.maven_repository}/org/lwjgl/lwjgl/lwjgl/2.9.1/lwjgl-2.9.1.jar"/>
+  </path>
+  
+  <!-- Modules -->
+  
+  
+  <!-- Module RPGKit -->
+  
+  <dirname property="module.rpgkit.basedir" file="${ant.file}"/>
+  
+  
+  
+  <property name="compiler.args.rpgkit" value="${compiler.args}"/>
+  
+  <property name="rpgkit.output.dir" value="${module.rpgkit.basedir}/target/classes"/>
+  <property name="rpgkit.testoutput.dir" value="${module.rpgkit.basedir}/target/test-classes"/>
+  
+  <path id="rpgkit.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="rpgkit.module.production.classpath">
+    <path refid="library.org.lwjgl.lwjgl:lwjgl:2.9.1.classpath"/>
+    <path refid="library.lib.classpath"/>
+  </path>
+  
+  <path id="rpgkit.runtime.production.module.classpath">
+    <pathelement location="${rpgkit.output.dir}"/>
+    <path refid="library.org.lwjgl.lwjgl:lwjgl:2.9.1.classpath"/>
+    <path refid="library.lib.classpath"/>
+  </path>
+  
+  <path id="rpgkit.module.classpath">
+    <pathelement location="${rpgkit.output.dir}"/>
+    <path refid="library.org.lwjgl.lwjgl:lwjgl:2.9.1.classpath"/>
+    <path refid="library.lib.classpath"/>
+  </path>
+  
+  <path id="rpgkit.runtime.module.classpath">
+    <pathelement location="${rpgkit.testoutput.dir}"/>
+    <pathelement location="${rpgkit.output.dir}"/>
+    <path refid="library.org.lwjgl.lwjgl:lwjgl:2.9.1.classpath"/>
+    <path refid="library.lib.classpath"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.rpgkit">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.rpgkit">
+    <patternset refid="excluded.from.module.rpgkit"/>
+  </patternset>
+  
+  <path id="rpgkit.module.sourcepath">
+    <dirset dir="${module.rpgkit.basedir}">
+      <include name="src/main/java"/>
+      <include name="src/main/resources"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.rpgkit" depends="compile.module.rpgkit.production,compile.module.rpgkit.tests" description="Compile module RPGKit"/>
+  
+  <target name="compile.module.rpgkit.production" description="Compile module RPGKit; production classes">
+    <mkdir dir="${rpgkit.output.dir}"/>
+    <javac destdir="${rpgkit.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true">
+      <compilerarg line="${compiler.args.rpgkit}"/>
+      <bootclasspath refid="rpgkit.module.bootclasspath"/>
+      <classpath refid="rpgkit.module.production.classpath"/>
+      <src refid="rpgkit.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.rpgkit"/>
+    </javac>
+    
+    <copy todir="${rpgkit.output.dir}">
+      <fileset dir="${module.rpgkit.basedir}/src/main/java">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.rpgkit.basedir}/src/main/resources">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.rpgkit.tests" depends="compile.module.rpgkit.production" description="compile module RPGKit; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.rpgkit" description="cleanup module">
+    <delete dir="${rpgkit.output.dir}"/>
+    <delete dir="${rpgkit.testoutput.dir}"/>
+  </target>
+  
+  <target name="init" description="Build initialization">
+    <!-- Perform any build initialization in this target -->
+  </target>
+  
+  <target name="clean" depends="clean.module.rpgkit" description="cleanup all"/>
+  
+  <target name="build.modules" depends="init, clean, compile.module.rpgkit" description="build all modules"/>
+  
+  <target name="init.artifacts">
+    <property name="artifacts.temp.dir" value="${basedir}/__artifacts_temp"/>
+    <property name="artifact.output.rpgkir" value="${basedir}/out/artifacts/RPGKir"/>
+    <mkdir dir="${artifacts.temp.dir}"/>
+    <property name="temp.jar.path.RPGKir.jar" value="${artifacts.temp.dir}/RPGKir.jar"/>
+  </target>
+  
+  <target name="artifact.rpgkir" depends="init.artifacts, compile.module.rpgkit" description="Build &#39;RPGKir&#39; artifact">
+    <property name="artifact.temp.output.rpgkir" value="${artifacts.temp.dir}/RPGKir"/>
+    <mkdir dir="${artifact.temp.output.rpgkir}"/>
+    <jar destfile="${temp.jar.path.RPGKir.jar}" duplicate="preserve" filesetmanifest="mergewithoutmain">
+      <zipfileset dir="${rpgkit.output.dir}"/>
+      <zipfileset file="${basedir}/META-INF/MANIFEST.MF" prefix="META-INF"/>
+      <zipfileset file="${basedir}/lib/lwjgl_test.jar" prefix="lib"/>
+      <zipfileset file="${basedir}/lib/asm-debug-all.jar" prefix="lib"/>
+      <zipfileset file="${basedir}/lib/lwjgl_util.jar" prefix="lib"/>
+      <zipfileset file="${basedir}/lib/lwjgl.jar" prefix="lib"/>
+      <zipfileset file="${basedir}/lib/jogg-0.0.7.jar" prefix="lib"/>
+      <zipfileset file="${basedir}/lib/ibxm.jar" prefix="lib"/>
+      <zipfileset file="${basedir}/lib/lzma.jar" prefix="lib"/>
+      <zipfileset file="${basedir}/lib/natives-windows.jar" prefix="lib"/>
+      <zipfileset file="${basedir}/lib/jnlp.jar" prefix="lib"/>
+      <zipfileset file="${basedir}/lib/AppleJavaExtensions.jar" prefix="lib"/>
+      <zipfileset file="${basedir}/lib/slick-examples.jar" prefix="lib"/>
+      <zipfileset file="${basedir}/lib/lwjgl-debug.jar" prefix="lib"/>
+      <zipfileset file="${basedir}/lib/jinput.jar" prefix="lib"/>
+      <zipfileset file="${basedir}/lib/jorbis-0.0.15.jar" prefix="lib"/>
+      <zipfileset file="${basedir}/lib/natives-mac.jar" prefix="lib"/>
+      <zipfileset file="${basedir}/lib/lwjgl_util_applet.jar" prefix="lib"/>
+      <zipfileset file="${basedir}/lib/natives-linux.jar" prefix="lib"/>
+      <zipfileset file="${basedir}/lib/slick.jar" prefix="lib"/>
+      <zipfileset file="${basedir}/lib/tinylinepp.jar" prefix="lib"/>
+    </jar>
+    <copy file="${temp.jar.path.RPGKir.jar}" tofile="${artifact.temp.output.rpgkir}/RPGKir.jar"/>
+  </target>
+  
+  <target name="build.all.artifacts" depends="artifact.rpgkir" description="Build all artifacts">
+    <mkdir dir="${artifact.output.rpgkir}"/>
+    <copy todir="${artifact.output.rpgkir}">
+      <fileset dir="${artifact.temp.output.rpgkir}"/>
+    </copy>
+    
+    <!-- Delete temporary files -->
+    <delete dir="${artifacts.temp.dir}"/>
+  </target>
+  
+  <target name="all" depends="build.modules, build.all.artifacts" description="build all"/>
+</project>
