@@ -17,8 +17,12 @@ public class SpriteSheetManager  {
         File folder = new File("resources/spritesheets");
         File[] spriteSheets = folder.listFiles();
         for(File f : spriteSheets){
+            if(f.getName().contains(".db")){
+                continue;
+            }
+            System.out.println("Trying to load : " + f.getName());
             try {
-                SpriteSheet spriteSheet = new SpriteSheet(f.getAbsolutePath(), 16, 16);
+                SpriteSheet spriteSheet = new SpriteSheet("resources/spritesheets/" + f.getName(), 16, 16);
                 addSpriteSheet(f.getName(), spriteSheet);
                 System.out.println("Loaded spritesheet " + f.getName());
             } catch (SlickException e) {

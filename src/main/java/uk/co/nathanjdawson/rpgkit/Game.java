@@ -6,6 +6,7 @@ import uk.co.nathanjdawson.rpgkit.entity.Entity;
 import uk.co.nathanjdawson.rpgkit.entity.Player;
 import uk.co.nathanjdawson.rpgkit.generator.ForestGenerator;
 import uk.co.nathanjdawson.rpgkit.generator.GUIGenerator;
+import uk.co.nathanjdawson.rpgkit.generator.HouseGenerator;
 import uk.co.nathanjdawson.rpgkit.generator.MenuScreenGenerator;
 import uk.co.nathanjdawson.rpgkit.map.tile.*;
 import uk.co.nathanjdawson.rpgkit.weather.Rain;
@@ -38,9 +39,10 @@ public class Game extends BasicGame {
 
     public Game(String title) {
         super(title);
-        //ForestGenerator forestGenerator = new ForestGenerator(screenX - 1, screenY - 1);
+        ForestGenerator forestGenerator = new ForestGenerator(screenX - 1, screenY - 1);
         MenuScreenGenerator screenGenerator = new MenuScreenGenerator(screenX - 16, screenY - 1);
-        tiles = screenGenerator.generate();
+        HouseGenerator houseGenerator = new HouseGenerator(screenX - 16, screenY - 2);
+        tiles = houseGenerator.generate();
         guiGenerator = new GUIGenerator(tiles, screenX - 15, 0, screenX - 1, screenY );
         player.setLocation(new Point(0,0));
         weathers.add(new Rain(screenX - 15, screenY));
@@ -70,14 +72,12 @@ public class Game extends BasicGame {
     @Override
     public void update(GameContainer gameContainer, int i) throws SlickException {
         tiles = guiGenerator.generate();
-        for(Weather w : weathers){
-            w.update(i);
-        }
     }
 
     @Override
     public void keyPressed(int key, char c) {
         super.keyPressed(key, c);
+        System.out.println("hello");
         if(key == Input.KEY_W){
             Point point = player.getLocation();
             Tile t = getTileByLocation(new Point(point.getX(), point.getY() - 1));
@@ -102,7 +102,8 @@ public class Game extends BasicGame {
             Tile t = getTileByLocation(new Point(point.getX() + 1, point.getY()));
             if(t != null && !t.isCanCollide()){
                 player.setLocation(new Point(point.getX() + 1, point.getY()));
-            }        }
+            }
+        }
     }
 
 
@@ -116,9 +117,6 @@ public class Game extends BasicGame {
         }
 
         player.draw(graphics);
-        for(Weather w : weathers){
-            w.draw(graphics);
-        }
     }
 
     public static void main(String[] args){

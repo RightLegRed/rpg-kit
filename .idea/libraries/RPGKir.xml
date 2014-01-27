@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="RPGKir">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/out/artifacts/RPGKir/RPGKit.jar!/" />
+      <root url="jar://$PROJECT_DIR$/out/artifacts/RPGKir/RPGKir.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

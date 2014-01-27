@@ -7,11 +7,11 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="slick" level="project" />
-    <orderEntry type="library" name="RPGKir" level="project" />
-    <orderEntry type="library" name="lib1" level="project" />
-    <orderEntry type="library" name="lib" level="project" />
-    <orderEntry type="library" name="slick1" level="project" />
+    <orderEntry type="library" exported="" name="slick" level="project" />
+    <orderEntry type="library" exported="" name="lib1" level="project" />
+    <orderEntry type="library" exported="" name="slick1" level="project" />
+    <orderEntry type="library" exported="" name="RPGKir" level="project" />
+    <orderEntry type="library" exported="" name="lib" level="project" />
   </component>
 </module>
 
