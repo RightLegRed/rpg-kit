@@ -10,7 +10,7 @@ import uk.co.nathanjdawson.rpgkit.SpriteSheetManager;
 /**
  * Created by 271678 on 27/01/14.
  */
-public class DoorTile extends Tile {
+public class DoorTile extends TransportTile {
 
     int type = 0;
 
@@ -27,6 +27,16 @@ public class DoorTile extends Tile {
         SpriteSheet spriteSheet = SpriteSheetManager.getSpriteSheet("tileset.png");
         Image image = spriteSheet.getSubImage(type,0);
         graphics.drawImage(image, getX() * Game.GAME_TILE_SIZE, getY() * Game.GAME_TILE_SIZE);
+    }
+
+    @Override
+    public void onWalk() {
+
+    }
+
+    @Override
+    public void beside() {
+
     }
 
     public int getType() {

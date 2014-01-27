@@ -23,6 +23,16 @@ public class MultiLayerTile extends Tile {
     }
 
     @Override
+    public void onWalk() {
+
+    }
+
+    @Override
+    public void beside() {
+
+    }
+
+    @Override
     public void setLocation(Point location) {
         super.setLocation(location);
         background.setLocation(location);

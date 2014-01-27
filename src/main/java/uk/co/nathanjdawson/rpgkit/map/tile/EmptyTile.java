@@ -21,4 +21,14 @@ public class EmptyTile extends Tile {
         graphics.drawRect(getX() * Game.GAME_TILE_SIZE, getY() * Game.GAME_TILE_SIZE, 16, 16);
 
     }
+
+    @Override
+    public void onWalk() {
+
+    }
+
+    @Override
+    public void beside() {
+
+    }
 }

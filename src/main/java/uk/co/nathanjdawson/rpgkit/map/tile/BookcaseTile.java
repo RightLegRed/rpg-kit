@@ -25,4 +25,14 @@ public class BookcaseTile extends Tile {
         Image image = spriteSheet.getSubImage(8,8);
         graphics.drawImage(image, getX() * Game.GAME_TILE_SIZE, getY() * Game.GAME_TILE_SIZE);
     }
+
+    @Override
+    public void onWalk() {
+
+    }
+
+    @Override
+    public void beside() {
+
+    }
 }

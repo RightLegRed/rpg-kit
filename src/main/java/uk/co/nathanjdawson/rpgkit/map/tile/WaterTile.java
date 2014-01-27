@@ -21,4 +21,14 @@ public class WaterTile extends Tile {
         Image image = spriteSheet.getSubImage(0, 7);
         graphics.drawImage(image, getX() * Game.GAME_TILE_SIZE, getY() * Game.GAME_TILE_SIZE);
     }
+
+    @Override
+    public void onWalk() {
+
+    }
+
+    @Override
+    public void beside() {
+
+    }
 }

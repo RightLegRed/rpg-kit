@@ -10,6 +10,9 @@ import org.newdawn.slick.Image;
 public abstract class Tile {
     Point location;
     boolean canCollide = false;
+    
+    public String walkText = "";
+    public String besideText = "";
 
     public Point getLocation(){
         return location;
@@ -45,4 +48,23 @@ public abstract class Tile {
 
     // This needs to be overridden
     public abstract void draw(Graphics graphics);
+
+    public abstract void onWalk();
+    public abstract void beside();
+
+    public String getWalkText() {
+        return walkText;
+    }
+
+    public void setWalkText(String walkText) {
+        this.walkText = walkText;
+    }
+
+    public String getBesideText() {
+        return besideText;
+    }
+
+    public void setBesideText(String besideText) {
+        this.besideText = besideText;
+    }
 }

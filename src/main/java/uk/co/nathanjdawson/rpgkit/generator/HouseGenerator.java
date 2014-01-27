@@ -24,6 +24,7 @@ public class HouseGenerator extends Generator{
     public ArrayList<Tile> generate(){
         generateBounds();
         generateHouse();
+        generateObjects();
         return tiles;
     }
 
@@ -51,14 +52,19 @@ public class HouseGenerator extends Generator{
         }
 
         for(int x = startX; x <= boundX; x++){
-            tiles.remove(getTileByLocation(x, startY));
-            tiles.add(new InsideWallTile(x, startY));
+            tiles.remove(getTileByLocation(x, startY - 1));
+            tiles.add(new InsideWallTile(x, startY - 1));
         }
-
-        tiles.remove(getTileByLocation((boundX - startX) / 2, startY));
-        DoorTile doorTile = new DoorTile((boundX - startX) / 2, startY);
+        int x = randInt(startX, boundX);
+        tiles.remove(getTileByLocation(x, startY - 1));
+        DoorTile doorTile = new DoorTile(x, startY - 1);
         doorTile.setType(3);
         tiles.add(doorTile);
+
+    }
+
+    public void generateObjects(){
+
     }
 
     // http://stackoverflow.com/questions/363681/generating-random-numbers-in-a-range-with-java || Greg Case

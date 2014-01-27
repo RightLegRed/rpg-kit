@@ -1,7 +1,10 @@
 package uk.co.nathanjdawson.rpgkit.generator;
 
 import org.lwjgl.util.Point;
+import uk.co.nathanjdawson.rpgkit.entity.Player;
+import uk.co.nathanjdawson.rpgkit.map.tile.GrassTile;
 import uk.co.nathanjdawson.rpgkit.map.tile.LetterTile;
+import uk.co.nathanjdawson.rpgkit.map.tile.MultiLayerTile;
 import uk.co.nathanjdawson.rpgkit.map.tile.Tile;
 
 import java.util.ArrayList;
@@ -31,6 +34,10 @@ public class GUIGenerator {
         return tiles;
     }
 
+    public ArrayList<Tile> update(Player player){
+        return tiles;
+    }
+
     public ArrayList<Tile> generateText(){
 
         return tiles;
@@ -44,7 +51,7 @@ public class GUIGenerator {
 
     public void generateBorders(){
         for(int y = 0; y<boundY; y++){
-            Tile tile = new LetterTile(new Point(startX, y), "|");
+            MultiLayerTile tile = new LetterTile(new Point(startX, y), "|");
             tile.setCanCollide(true);
             tiles.add(tile);
         }

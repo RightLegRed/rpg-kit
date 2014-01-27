@@ -18,6 +18,7 @@ public class TreeTile extends MultiLayerTile {
         super(location);
         setCanCollide(true);
         background = new GrassTile(location);
+
     }
 
     @Override
@@ -37,5 +38,15 @@ public class TreeTile extends MultiLayerTile {
 
     public void setLiving(boolean living) {
         this.living = living;
+    }
+
+    @Override
+    public void onWalk() {
+
+    }
+
+    @Override
+    public void beside() {
+
     }
 }

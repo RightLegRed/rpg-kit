@@ -26,4 +26,14 @@ public class DungeonFloorTile extends Tile {
         Image image = spriteSheet.getSubImage(5, 1);
         graphics.drawImage(image, getX() * Game.GAME_TILE_SIZE, getY() * Game.GAME_TILE_SIZE);
     }
+
+    @Override
+    public void onWalk() {
+
+    }
+
+    @Override
+    public void beside() {
+
+    }
 }
