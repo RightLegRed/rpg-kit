@@ -11,7 +11,7 @@ import java.util.Random;
 /**
  * Created by 271678 on 20/01/14.
  */
-public class ForestGenerator {
+public class ForestGenerator extends Generator{
 
     int boundX = 0;
     int boundY = 0;
@@ -21,6 +21,7 @@ public class ForestGenerator {
     double minNoise = 0;
 
     public ForestGenerator(int boundX, int boundY) {
+        super(boundX, boundY);
         this.boundX = boundX;
         this.boundY = boundY;
         noise = new Noise(new Random(), 1, boundX, boundY);
@@ -148,14 +149,6 @@ public class ForestGenerator {
 
 
 
-    public Tile getTileByLocation(Point point){
-        for(Tile t : tiles){
-            if(t.getLocation().equals(point)){
-                return t;
-            }
-        }
-        return null;
-    }
 
     // http://stackoverflow.com/questions/363681/generating-random-numbers-in-a-range-with-java || Greg Case
     public int randInt(int min, int max) {

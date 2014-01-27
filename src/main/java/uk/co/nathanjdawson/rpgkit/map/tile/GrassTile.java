@@ -18,6 +18,7 @@ public class GrassTile extends Tile {
     int health = 2;
     public GrassTile(Point location) {
         super(location);
+        setBesideText("Grass!");
     }
 
     @Override

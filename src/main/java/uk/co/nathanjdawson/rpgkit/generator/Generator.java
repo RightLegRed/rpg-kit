@@ -51,6 +51,15 @@ public abstract class Generator {
         return null;
     }
 
+    public Tile getTileByLocation(Point point, ArrayList<Tile> newT){
+        for(Tile t : newT){
+            if(t.getLocation().equals(point)){
+                return t;
+            }
+        }
+        return null;
+    }
+
     public int randInt(int min, int max) {
         Random rand = new Random();
         int randomNum = rand.nextInt((max - min) + 1) + min;

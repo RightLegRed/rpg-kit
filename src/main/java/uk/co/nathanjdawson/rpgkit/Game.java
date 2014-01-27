@@ -70,7 +70,7 @@ public class Game extends BasicGame {
 
     @Override
     public void update(GameContainer gameContainer, int i) throws SlickException {
-        tiles = guiGenerator.update(player);
+        tiles = guiGenerator.update(player, tiles);
     }
 
     @Override

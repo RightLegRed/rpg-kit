@@ -11,9 +11,6 @@ public class MultiLayerTile extends Tile {
 
     Tile background;
 
-    public MultiLayerTile(Point location) {
-        super(location);
-    }
 
     @Override
     public void draw(Graphics graphics) {
@@ -32,10 +29,11 @@ public class MultiLayerTile extends Tile {
 
     }
 
-    @Override
-    public void setLocation(Point location) {
-        super.setLocation(location);
-        background.setLocation(location);
+    public void setLocation(int x, int y) {
+        super.setX(x);
+        super.setY(y);
+        background.setX(x);
+        background.setY(y);
     }
 
     public Tile getBackground() {

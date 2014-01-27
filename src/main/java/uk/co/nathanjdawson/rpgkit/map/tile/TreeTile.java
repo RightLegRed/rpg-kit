@@ -18,7 +18,7 @@ public class TreeTile extends MultiLayerTile {
         super(location);
         setCanCollide(true);
         background = new GrassTile(location);
-
+        setBesideText("Chop tree down");
     }
 
     @Override

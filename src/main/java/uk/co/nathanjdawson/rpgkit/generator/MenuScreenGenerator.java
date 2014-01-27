@@ -11,7 +11,7 @@ import java.util.Random;
 /**
  * Created by Archelaus on 21/01/14.
  */
-public class MenuScreenGenerator {
+public class MenuScreenGenerator extends Generator{
 
     int boundX = 0;
     int boundY = 0;
@@ -21,6 +21,7 @@ public class MenuScreenGenerator {
     double minNoise = 0;
 
     public MenuScreenGenerator(int boundX, int boundY) {
+        super(boundX, boundY, 0, 0);
         this.boundX = boundX;
         this.boundY = boundY;
         noise = new Noise(new Random(), 1, boundX, boundY);

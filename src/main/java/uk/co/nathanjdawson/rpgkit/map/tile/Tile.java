@@ -8,34 +8,27 @@ import org.newdawn.slick.Image;
  * Created by 271678 on 13/01/14.
  */
 public abstract class Tile {
-    Point location;
+    int x;
+    int y;
     boolean canCollide = false;
-    
+
     public String walkText = "";
     public String besideText = "";
 
-    public Point getLocation(){
-        return location;
+    public void setX(int x) {
+        this.x = x;
     }
 
-    public Tile(Point location) {
-        this.location = location;
+    public void setY(int y) {
+        this.y = y;
     }
 
-    public Tile(int x, int y){
-        this.location = new Point(x, y);
+    public int getX() {
+        return x;
     }
 
-    public int getX(){
-        return location.getX();
-    }
-
-    public int getY(){
-        return location.getY();
-    }
-
-    public void setLocation(Point location) {
-        this.location = location;
+    public int getY() {
+        return y;
     }
 
     public boolean isCanCollide() {
